@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car rental website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/ride.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img src="img/jeep.png" alt=""></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ride.html">Ride</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+        <div class="header-btn">
+            <a href="signup.html" class="sign-up">Sign up</a>
+            <a href="login.html" class="sign-in">Sign in</a>
+        </div>
+    </header>
+    <section class="ride" id="ride">
+        <div class="heading">
+            <span>How Its Work</span>
+            <h1>Rent with 3 Easy Steps</h1>
+        </div>
+        <div class="ride-container">
+            <div class="box">
+                <i class='bx bxs-map'></i>
+                <h2>Choose a Location</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus mollitia nihil minus neque quam!
+                    Minus.</p>
+            </div>
+            <div class="box">
+                <i class='bx bxs-calendar-check'></i>
+                <h2>Pick-up Date</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus mollitia nihil minus neque quam!
+                    Minus.</p>
+            </div>
+            <div class="box">
+                <i class='bx bxs-calendar-star'></i>
+                <h2>Book a Car</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus mollitia nihil minus neque quam!
+                    Minus.</p>
+            </div>
+        </div>
+    </section>
+    <div class="containers">
+        <div class="form">
+            <h1>Contact Us Form</h1>
+            <input type="text" placeholder="First Name" id="First">
+            <input type="text" placeholder=" Name" id="name">
+            <input type="email" placeholder="email" id="email">
+            <input type="number" id="mobile" placeholder="mobile">
+            <h4>Type your message here....</h4>
+            <textarea id="textarea"></textarea>
+            <input type="submit" value="send" id="button" onclick="func()">
+        </div>
+    </div>
+
+    <!-- ---script--- -->
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <script>
+        function func() {
+            var First = document.getElementById("First").value;
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var mobile = document.getElementById("mobile").value;
+            var textarea = document.getElementById("textarea").value;
+            if (First == "") {
+                alert("Please Enter first name ")
+            }
+            else if (name == "") {
+                alert("Please Enter name ")
+            }
+            else if (email == "") {
+                alert("Please Enter email ")
+            }
+            else if (mobile == "") {
+                alert("Please Enter mobile number ")
+            }
+            else if (textarea == "") {
+                alert("Please Enter message ")
+            }
+            else {
+                alert("Thank for your feedback ")
+            }
+        } 
+    </script>
+</body>
+
+</html>
