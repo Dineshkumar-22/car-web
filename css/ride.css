@@ -347,6 +347,9 @@ textarea::-webkit-scrollbar-thumb{
         order: 2;
     }
 }
+.containers .form{
+    width: 60%;
+}
 
 @media (max-width:568px) {
     .copyright {

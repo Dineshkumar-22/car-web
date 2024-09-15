@@ -276,6 +276,7 @@ header .shopping span{
 
     .list {
         grid-template-columns: 1fr;
+        width: 50%;
     }
 
     .form-container form {
@@ -336,6 +337,7 @@ header .shopping span{
     }
     .listCard{
         grid-template-columns: 1fr;
+        
     }
 }
 
